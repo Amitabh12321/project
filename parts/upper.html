@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd01506d93.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #main{
+            height: 470px;
+            width: 100%;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+        }
+        #main>img{
+            height: 470px ;
+            width: 100%;
+            cursor: pointer;
+        }
+        .para{
+            text-align: center;
+            font-family:  "Poly Regular","Times New Roman",serif;
+        }
+        .para>h2{
+            font-size: 24px;
+            color:#000;
+          font-weight: 400;
+        }
+        #elta{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .elta1{
+            height: 480px;
+            width: 520px;
+            /* border: 1px solid red; */
+            background-color: #e3e6f3;
+
+        }
+        .elta1>img{
+            height: 480px;
+            width: 520px;
+        }
+        .elta2{
+            height: 570px;
+            width: 780px;
+            /* border: 1px solid red; */
+           display: flex;
+           justify-content: center;
+           
+        }
+        .elta2>div{
+            height: 560px;
+            width:380px ;
+            /* border: 1px solid black; */
+            margin-left: 3px;
+        }
+        .elta2Image{
+            height:400px ;
+            width: 400px;
+        }
+        .elta2 div p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 13.7px;
+        }
+        .Dollar{
+            font-weight:800;
+            font-size: 17px;
+        }
+        #icon4260{
+            display: flex;
+            justify-content: center;
+           
+            font-family: sans-serif;
+           
+        }
+        #Number{
+             margin-left: 5px;
+             font-weight: bold;
+        }
+        button{
+            height: 40px;
+            width: 380px ;
+            background-color:black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #646161;
+        }
+        .Recommended{
+            text-align: center;
+          font-weight: 400;
+          font-size: 27px;
+         padding-top: 10px;
+        }
+        .QuickBuy{
+            display: flex;
+            height: 520px;
+            width:1400px;
+            justify-content: center;
+            /* border: 1px solid red; */
+            gap: 15px;
+            margin-left: 15px;
+        }
+        .QuickBuy>div{
+           height: 500px;
+           width: 300px ;
+           /* border: 1px solid black; */
+        }
+        .QuickBuy>div img{
+            height: 270px;
+            width:260px
+
+        }
+        .QuickBuy>div p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 13.5px;
+        }
+        .button{
+            height: 40px;
+            width: 270px ;
+            background-color:black;
+            color: white;
+            border: none;
+            cursor:pointer;
+            
+        }
+        .button:hover{
+            background-color: #646161;
+        }
+        .Number{
+            margin-left: 1px;
+             font-weight: bold;
+             color: #000021;
+             
+        }
+        .Dollar1{
+            font-weight:800;
+            line-height: 20px;
+            font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+    
+        }
+        .gift{
+            height: 33px;
+            width:155px;
+            background-color: #ffffff;
+            border: 1px solid grey;
+            margin-left: 65px;
+            color:rgb(26, 24, 24);
+            cursor: pointer;
+            
+        }
+        .gift:hover{
+           background-color:white;
+        }
+        .icon4259{
+            display: flex;
+            justify-content: center;
+           margin-top: 15px;
+            font-family: sans-serif;
+        } 
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(4,280px);
+           grid-template-rows: repeat(2,40px);
+           justify-content:space-evenly;
+           
+           gap: 10px;
+        }  
+        #grid>div{
+            border: 2px solid #000000;
+            cursor: pointer;
+           
+
+        }
+        #grid>div:hover{
+            background-color: rgb(194, 193, 193);
+        }
+        #grid>div p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 14.4px;
+            margin-top: 10px;
+        }
+        .shop{
+            text-align: center;
+          font-weight: 400;
+          font-size: 27px;
+         padding-bottom: 25px;
+        }
+        #Meet{
+            display:flex;
+            justify-content:space-evenly;
+            margin-top: 40px;
+            height:450px ;
+            width:1300px ;
+            /* border: 1px solid red; */
+        }
+        #Meet>div{
+            height:350px;
+            width: 400px;
+            /* border: 1px solid red; */
+            
+        }
+        #Meet>div img{
+            height:350px;
+            width: 400px;
+        }
+        #Meet>div h2{
+             text-align: center;
+            margin-top: 4px;
+            font-weight: 400;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #Meet>div p{
+            text-align: center;
+            margin-top:-5px;
+            font-family: sans-serif;
+            font-size: 13.5px;
+            cursor: pointer;
+        }
+        #ANTIOXIDANT{
+            height: 200px;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+        }
+        #ANTIOXIDANT>img{
+            height: 200px;
+            width: 100%;
+
+        }
+        .feature{
+            text-align: center;
+            font-weight: 400;
+            font-size: 25px;
+            margin-top: 35px;
+        }
+        #Obagi{
+            display: grid;
+            grid-template-columns: repeat(6,220px);
+            grid-template-rows: 150px;
+            justify-content: space-evenly;
+
+        }
+        /* #Obagi>div{
+            border: 1px solid red;
+        } */
+        .obgimg{
+            height: 100px;
+            width: 160px;
+            margin-top: 18px;
+        }
+        .skinceuticals{
+            height: 20px;
+            width: 180px;
+            margin-top: 50px;
+        }
+        .eltaMd{
+            height: 100px;
+            width: 180px;
+            margin-top: 20px;
+        }
+        .globe{
+            height: 80px;
+            width: 180px;
+            margin-top: 25px;
+        }
+        .skinMedica{
+            height: 80px;
+            width: 220px;
+            margin-top: 28px;
+        }
+        .sunday{
+            height: 70px;
+            width: 200px;
+            margin-top: 32px;
+            padding-left: 10px;
+        }
+        .Qbutton{
+            height: 40px;
+            width: 270px ;
+            background-color:black;
+            color: white;
+            border: none;
+            cursor:pointer;
+            margin-top: 30px;
+        }
+        .Qbutton1{
+            height: 40px;
+            width: 270px ;
+            background-color:black;
+            color: white;
+            border: none;
+            cursor:pointer;
+            margin-top: 63px;
+        }
+        .video{
+            margin-top: 60px;
+            /* border: 1px solid red; */
+            padding-left: 40px;
+        }
+        .Derms{
+            text-align: center;
+            font-family: sans-serif;
+            font-size:14.5px;
+            line-height: 1.5;
+        }
+        .last{
+            display: flex;
+            justify-content: center;
+             gap: 55px;
+
+        }
+        .last>div{
+            height: 180px;
+            width: 285px;
+            /* border: 1px solid red; */
+            
+        }
+        .last>div img{
+            height: 180px;
+            width: 285px;
+            
+           
+           
+        }
+        a>p{
+            color:black;
+            text-align: center;
+            font-family:sans-serif ;
+            font-size: 13px;
+        }
+        .line{
+            margin-top: 200px;
+        }
+        #box1{
+            display:flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        #box1>div{
+            
+            /* border: 1px solid blue; */
+            height: 100px;
+            width:650px;
+            /* margin-top: 2px; */
+           
+        }
+        #box1>div p{
+            margin-left: 10px;
+            
+            font-size: 14px;
+        }
+        #box1>div button{
+            margin-left: 10px;
+            height: 40px;
+            width:22%;
+            background-color: #222222;
+            color: white;
+            border: none;
+        }
+        .facebookicon{
+            display: flex;
+            margin-left: 20px;
+            gap:15px;
+        }
+      
+      .facebookicon>i{
+           font-size:20px;
+          
+           color: #676767;
+           padding:10px 12px 10px 12px;
+           border-radius:25px;
+           background-color: #d8d8d8;
+       }
+       #box2{
+            display:flex;
+            justify-content: center;
+            gap:30px;
+            margin-top: 10px;
+        }
+        #box2>div{
+            
+            /* border: 1px solid red; */
+            height: 250px;
+            width:650px;
+          
+           
+        }
+        .ptag1{
+            margin-left: 10px;
+           
+        
+        }
+        
+        .ptag{
+           
+             margin-left: 10px;
+            font-family: sans-serif; 
+            font-size: 13.6px;
+            margin-top: 20px;
+        }
+        #box2_1{
+            display: flex;
+            gap:25px;
+            
+        }
+        #box2_1>div{
+            
+            /* border: 1px solid red; */
+            height: 250px;
+            width:250px;
+            
+          
+        }
+        #box3{
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+        #box3>div{
+            
+            /* border: 1px solid red; */
+            height:220px;
+            width:650px;
+           
+        }
+        .box3_1 h1{
+            font-family: sans-serif;
+           margin-left: 20px;
+           
+         
+        }
+        .box3_1 p{
+            margin-left: 20px;
+            font-family: sans-serif;
+            color:#757575
+        }
+        h3{
+            font-family: sans-serif;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+        .box3_2{
+            display: flex;
+           
+            
+        }
+        .box3_2>div{
+            height:40px;
+            width:60px;
+          border: 1px solid #ececec;
+            margin-left: 5px;
+            
+        }
+        img{
+            height:35px;
+            width: 50px;
+            font-size: 10px;
+           margin-left:5px;
+           margin-top: 2px;
+           
+        }
+        #Image{
+            display: flex;
+            
+        }
+        #Image>div{
+            height: 40px;
+            width: 60px;
+            border: 1px solid  #ececec;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        Image{
+            height:35px;
+            width: 50px;
+            font-size: 10px;
+           margin-left:5px;
+           margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/17/original-0303-STDCRE-32266-DS-AMR-MarchSPFLite-Banners-1920x700-095817.jpg" alt=""></div>
+    <div class="para">
+        <h2>3x Points on EltaMD</h2>
+        <p>Rewards members earn TRIPLE on best-selling SPF. Ends 4/3.</p>
+    </div>
+    <div id="elta">
+        <div class="elta1">
+            <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/0303-STDCRE-32266-DS-AMR-MarchSPFLite-Square-676x556-074354.jpg" alt="">
+        </div>
+        <div class="elta2">
+            <div>
+                <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/11370303-1074944341868735.jpg" alt="">
+                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+                
+
+                <div id="icon4260">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div id="Number">4260</div>
+                </div>
+                <p class="Dollar">$37.00</p>
+                <button>QUICKBUY</button>
+
+            </div>
+            <div>
+                <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/13656347-1734935260744289.jpg" alt="">
+                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+                <div id="icon4260">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div id="Number">1</div>
+                </div>
+                <p class="Dollar">$39.50</p>
+                <button>QUICKBUY</button>
+
+            </div>
+        </div>
+    </div>
+     <h2 class="Recommended">Recommended for you</h2>
+        <div class="QuickBuy">
+           <div>
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg" alt="">
+             <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+             <button class="gift">$15 EltaMD Gift</button>
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">4259</div>
+                </div>
+                <p class="Dollar1">$37.00</p>
+                <button class="button">QUICKBUY</button>
+            
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/13417349-1544914795010323.jpg" alt="">
+                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+                <button class="gift">$15 EltaMD Gift</button>
+                   <div class="icon4259">
+                       <div><i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                       </div>
+                        <div class="Number">4259</div>
+                   </div>
+                   <p class="Dollar1">$37.00</p>
+                   <button class="button">QUICKBUY</button>
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
+                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+                <button class="gift">$15 EltaMD Gift</button>
+                   <div class="icon4259">
+                       <div><i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                       </div>
+                        <div class="Number">4259</div>
+                   </div>
+                   <p class="Dollar1">$37.00</p>
+                   <button class="button">QUICKBUY</button>
+            </div>
+            <div >
+                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11289609-8744892770898772.jpg" alt="">
+             <p>SEltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+             <button class="gift">$15 EltaMD Gift</button>
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">4259</div>
+                </div>
+                <p class="Dollar1">$37.00</p>
+                <button class="button">QUICKBUY</button>
+            </div>
+            <div >
+                <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+             <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+             <button class="gift">$15 EltaMD Gift</button>
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">4259</div>
+                </div>
+                <p class="Dollar1">$37.00</p>
+                <button class="button">QUICKBUY</button>
+            </div>
+       </div>
+       <h2 class="shop">Shop By Category</h2>
+       <div id="grid">
+           <div><p>SKIN CARE</p></div>
+           <div><p>SUNSCREEN</p></div>
+           <div><p>MOISTURIZERS</p></div>
+           <div><p>HAIR CARE</p></div>
+           <div><p>EYE CREAM</p></div>
+           <div><p>CLEANERS</p></div>
+           <div><p>MAKEUP</p></div>
+           <div><p>FACE SERUMS</p></div>
+       </div>
+       <div id="Meet">
+           <div> 
+               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/Jane_Iredale-032137.png" alt="">
+               <h2>Meet the NEW PurePressed Base</h2>
+               <p>The bestseller from Jane Iredale, now in fresh, new sustainable packaging.</p>
+            </div>
+            <div>
+               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/31/Female_Founded_Brands_SquareBanner-054250-031931.jpg" alt="">
+               <h2>Shop Women-Owned</h2>
+               <p>Curated solutions from our favorite female-founded brands.</p>
+            </div>
+           <div>
+               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/HPSQ_Banner_676x556-054153-032052.jpg" alt="">
+               <h2>Meet Fekkai</h2>
+               <p>Salon-level hair care with clean, natural ingredients that’s free of nasties & full of performance.</p>
+           </div>
+       </div>
+       <div  id="ANTIOXIDANT">
+        <img src="https://static.thcdn.com/images/large/webp/widgets/208-us/46/original-ANTIOXIDANTS_BANNERS_1640X244-064546.jpg" alt="">
+       </div>
+       <h2 class="feature">Featured Brands</h2>
+       <div id="Obagi">
+           <div>
+               <img class="obgimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png" alt="">
+           </div>
+           <div>
+               <img class="skinceuticals" src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg" alt="">
+           </div>
+           <div>
+               <img class="eltaMd" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png" alt="">
+           </div>
+           <div>
+               <img class="globe" src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png" alt="">
+           </div>
+           <div>
+               <img class="skinMedica" src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg" alt="">
+           </div>
+           <div>
+               <img class="sunday" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/SundayRiley-Logo_2000x2000-01-075734.jpg" alt="">
+           </div>
+       </div>
+       <h2 class="feature">Female-Founded Brands</h2>
+       <div class="QuickBuy">
+        <div>
+          <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+          <p>Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)</p>
+          <!-- <button class="gift">$15 EltaMD Gift</button> -->
+             <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">659</div>
+             </div>
+             <p class="Dollar1">$32.00</p>
+             <button class="Qbutton">QUICKBUY</button>
+         
+         </div>
+         <div>
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588281-8764882139037003.jpg" alt="">
+             <p>Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.</p>
+             <!-- <button class="gift">$15 EltaMD Gift</button> -->
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">475</div>
+                </div>
+                <p class="Dollar1">$36.00</p>
+                <button class="Qbutton">QUICKBUY</button>
+         </div>
+         <div>
+             <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
+             <p>Sunday Riley GOOD GENES All-In-One Lactic Acid Tr)</p>
+             <!-- <button class="gift">$15 EltaMD Gift</button> -->
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">647</div>
+                </div>
+                <p class="Dollar1">$122.00</p>
+                <button class="Qbutton">QUICKBUY</button>
+         </div>
+         <div >
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902784-7634871308243767.jpg" alt="">
+          <p>Supergoop!® Glowscreen SPF 40 1.7 fl. oz Sunscreen SPF 40 1.7 fl. oz.</p>
+          <!-- <button class="gift">$15 EltaMD Gift</button> -->
+             <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">161</div>
+             </div>
+             <p class="Dollar1">$36.00</p>
+             <button class="Qbutton">QUICKBUY</button>
+         </div>
+         <div >
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg" alt="">
+          <p>Jan Marini Bioglycolic Face Cleanser Glowscreen SPF 40 1.7 (8 oz.)</p>
+          <!-- <button class="gift">$15 EltaMD Gift</button> -->
+             <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">117</div>
+             </div>
+             <p class="Dollar1">$209.00</p>
+             <button class="Qbutton">QUICKBUY</button>
+         </div>
+    </div>
+    <h2 class="feature">New Arrivals</h2>
+    <div class="QuickBuy">
+        <div>
+          <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13644769-2094935078971616.jpg" alt="">
+          <p>Sunday Riley C.E.O. Afterglow Brightening Vitamin C Cream 50ml</p>
+          <button class="gift">New Arrival</button>
+             <!-- <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">4259</div>
+             </div> -->
+             <p class="Dollar1">$65.00</p>
+             <button class="Qbutton1">QUICKBUY</button>
+         
+         </div>
+         <div>
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13156809-1574915281422679.jpg" alt="">
+             <p>TriPollor STOP Vx Bag Exclusive Bundle (Worth $424.00)</p>
+             <button class="gift">New Arrival</button>
+                <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">1</div>
+                </div>
+                <p class="Dollar1">$649.00</p>
+                <button class="Qbutton">QUICKBUY</button>
+         </div>
+         <div>
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13694394-1174938374323578.jpg" alt="">
+             <p>TriPollar STOP X Rose Gold and Cosmetics Bag Exclusive Bundle (Worth $424.00)</p>
+             <button class="gift">New Arrival</button>
+                <!-- <div class="icon4259">
+                    <div><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="Number">4259</div>
+                </div> -->
+                <p class="Dollar1">$399.50</p>
+                <button class="Qbutton1">QUICKBUY</button>
+         </div>
+         <div >
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13674838-2504939183735374.jpg" alt="">
+          <p>jane iredale Pure Pressed Blush 3.7g (Various Shades)</p>
+          <button class="gift">New Arrival</button>
+             <!-- <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">4259</div>
+             </div> -->
+             <p class="Dollar1">$37.00</p>
+             <button class="Qbutton1">QUICKBUY</button>
+         </div>
+         <div >
+             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+          <p>SkinCeuticals Phyto A+ Brightening Treatment 1 fl. oz</p>
+          <button class="gift">SkinCeuticals</button>
+             <div class="icon4259">
+                 <div><i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                 </div>
+                  <div class="Number">4259</div>
+             </div>
+             <p class="Dollar1">$37.00</p>
+             <button class="Qbutton">QUICKBUY</button>
+         </div>
+    </div>
+    <!-- Video uploaded here -->
+    <div class="video">
+        <video controls width="1200" height="700" autoplay="true" source src="beauty.mp4" controls>
+        </video>
+    </div>
+    <h2 class="feature">#MyDermstoreGlow</h2>
+    <p class="Derms">We care about what goes on your skin, because of what’s within. Our assortment is top-rated, curated & authenticated—bringing you the highest quality products and straight-from-the-experts info to help you navigate all things beauty and skin care. Join the conversation on Instagram with #MyDermstoreGlow—show us your favorite #Dermstore finds that help you care for the skin you’re in! We’re excited to feature our community’s must-haves all season long.</p>
+    <p class="feature">From The Blog</p>
+    <div class="last">
+       
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/45/transition-skin-care-routine-from-winter-to-spring-021145.jpg" alt="">
+            <a href=""><p>How to Transition Your Skin Care Routine from Winter to Spring</p></a>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/Q%26A-with-founder-of-briogeo-063326.jpg" alt="">
+            <a href=""><p>Q&A with Nancy Twine, Founder of Briogeo</p></a>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg" alt="">
+            <a href=""><p>In What Order Do I Apply My Skin Care and Products?</p></a>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/40/skinceuticals-products-widget-110940.jpg" alt="">
+            <a href=""><p>7 Overnight Treatments for Super Glowy Skin</p></a>
+        </div>
+    </div>
+    <hr class="line">
+    <div id="box1">
+        <div> 
+            <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p> 
+            <button>SIGN ME UP</button>
+        </div>
+        <div>
+            <p>Connect with us</p>
+            <div class="facebookicon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+          
+         </div>
+    </div>
+    <div id="box2">
+        <div>
+            <hr>
+            <p class="ptag1">Customer Service</p>
+            <p class="ptag">Help Center / FAQs</p>
+            <p class="ptag">Returns</p>
+            <p class="ptag">Shipping Information</p>
+            <p class="ptag">Order Status</p>
+            
+        </div>
+        <div id="box2_1">
+            <div>
+                <hr>
+                <p class="ptag1">My Account</p>
+                <p class="ptag">Manage My Subscriptions</p>
+                <p class="ptag">My Rewards</p>
+                <p class="ptag">My Favorites</p>
+                <p class="ptag">Referrals</p>
+                <p class="ptag">Order History</p>
+            </div>
+            <div>
+                <hr>
+                <p class="ptag1">Company</p>
+                <p class="ptag">About Us</p>
+                <p class="ptag">Press</p>
+                <p class="ptag">What is Klarna?</p>
+                
+            </div>
+            <div>
+                <hr>
+                <p class="ptag1">Legal</p>
+                <p class="ptag">Privacy Policy</p>
+                <p class="ptag">Terms & Conditions</p>
+                <p class="ptag">Modern Slavery Statement</p>
+                <p class="ptag">Product Recall</p>
+                <p class="ptag">Accessibility</p>
+            </div>
+        </div>
+    </div>
+    <div><hr></div>
+    <div id="box3">
+        
+        <div class="box3_1">
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div >
+            <h3>Pay securely with</h3>
+            <div class="box3_2">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqI84jLAeVQUmglrCFznTR67yt1htCTqW-Q&usqp=CAU" alt="" class="src">
+            </div>
+            <div>
+                <img src="https://pngset.com/images/visa-logo-visa-text-symbol-trademark-label-transparent-png-1409869.png" alt="" class="src">
+            </div>
+            <div>
+                <img src="https://images4.alphacoders.com/101/thumb-1920-1017054.png" alt="">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/800px-Mastercard-logo.svg.png" alt="">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3v-XRd3SIpyn6Da2ouxQ25vEmfIN_35hDA&usqp=CAU" alt="">
+            </div>
+            <div>
+                <img src="https://s1.q4cdn.com/692158879/files/images/brand_imagery/AXP_BlueBoxLogo_Alternate_REGULARscale_RGB_DIGITAL_700x700.png" alt="">
+            </div>
+            <div>
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/93_Discover_Credit_Card_logo_logos-512.png" alt="">
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196548.png" alt="">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MSWH29yB94KRxVJYvSuqdxzvPfkgRN_sRg&usqp=CAU" alt="">
+            </div>
+        </div>
+            <div id="Image">
+                <div>
+                    <img class="Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaSx5gQCaXgAaKyFbvZc9BViVkcO80tTQCA&usqp=CAU" alt="">
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGnPnZJyvRwnF2c1U6won8oAkTi9SV54vfVQ&usqp=CAU" alt="">
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjNRX2WDbBA9GlxKO9pyXiFrIHxdJNVfJYw&usqp=CAU" alt="">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
