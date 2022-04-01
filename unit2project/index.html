@@ -5,8 +5,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cd01506d93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
+     <!-- <style>
+        #container{
+            height: 290px;
+            width: 100%;
+            background-color: #f2f2f2;
+            margin-top: -6.5px;
+            border: 1px solid #f2f2f2;
+
+        }
+        #contain1{
+            height: 150px;
+            width: 100%;
+            background-color: #ffffff;
+            /* border: 1px solid black; */
+            margin-top: 28px;
+        }
+        #derm{
+            display: flex;
+            justify-content: space-between;
+        }
+        #derm>div{
+          height: 60px;
+          width: 32%;
+          /* border: 1px solid red; */
+          margin-top: 20px;
+        }
+        #derm>div h1{
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .input{
+            display: flex;
+            margin-top: 8px;
+            
+           
+        }
+        .input>div>input{
+            
+            height:35px;
+            width: 380px;
+            /* border: 1px solid black; */
+           margin-left: 3px;
+           color: #bbbbbb;
+            border: none;
+            
+        }
+        .input>div>i{
+            margin-right: 8px;
+        }
+        
+        .input>div{
+           border: 1px solid black;
+           
+        }
+        #login{
+         display: flex;
+         
+         justify-content:end;
+         
+        }
+        #login>div{
+            display: flex;
+            /* border: 1px solid black; */
+            height: 50px;
+            width: 160px;
+        }
+        #login>div>button{
+            display: flex;
+            height: 40px;
+            width: 120px;
+            margin-top:5px;
+            margin-left: 35px;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+
+        }
+        
+        #login>div>button>img{
+            height:25px;
+            width:25px;
+            margin-top:5px;
+            margin-left: 10px;
+        }
+        #login>div>button>p{
+            margin-left: 12px;
+            margin-top:10px;
+        }
+        .cart{
+            display: flex;
+            
+            height: 40px;
+            width: 120px;
+            /* margin-top:5px; */
+            margin-left: 15px;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+            
+        }
+        .cart>img{
+            margin-top: 10px;
+            height:30px;
+            width: 30px;
+            margin-left: 40px;
+        }
+        .cart>p{
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-top: 18px;
+            margin-left: 5px;
+        }
+        #contain2{
+            display: grid;
+            grid-template-columns: repeat(14,1fr);
+            grid-template-rows:50px;
+            gap: 5px;
+            cursor: pointer;
+          
+          
+        }
+        #contain2>div{
+            /* border: 1px solid red; */
+            margin-top: 8px;
+        
+        }
+        #contain2>div p{
+        text-align: center;
+        margin-top:12px;
+        font-size: 13.5px;
+        }
+        #Tools{
+            margin-left: -5px;
+        }
+        #D{
+            display: flex;
+            margin-left: 28px;
+           
+            gap: 10px;
+
+        }
+        #D>div{
+            /* border: 1px solid black; */
+            height: 60px;
+            width:200px;
+            
+            
+        }
+        #D>div:nth-child(1){
+            /* border: 1px solid red; */
+            height: 60px;
+            width:60px;
+           
+        }
+        .blackD{
+            height: 58px;
+            width: 58px;
+            background-color: black;
+            border: 1px solid black;
+           border-top-right-radius: 50%;
+           border-bottom-right-radius: 50%;
+           
+        }
+        .blackD>div{
+            height: 35px;
+            width: 35px;
+            /* border: 1px solid greenyellow; */
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 50%;
+            background-color: #ffffff;
+
+        }
+        #contain3{
+            display: flex;
+            justify-content:end;
+        }
+        #contain3>div{
+            height: 60px;
+            width: 400px;
+            /* border: 1px solid red; */
+            margin-left: 25px;
+            
+        }
+        #contain3>div:nth-child(1){
+            width: 250px;
+            margin-right: 5px;
+        }
+        #contain3>div:nth-child(3){
+            width: 250px;
+        }
+        #contain3>div:nth-child(4){
+            width: 250px;
+          
+
+        }
+        
+        #contain3>div>i{
+            margin-left: 50px; 
+             margin-top: 20px;
+        }
+        #contain3>div>p{
+            margin-top: -18px;
+            text-align:end;
+            font-family: sans-serif;
+            font-size: 13.5px;
+        }
+        #contain3>#new>p{
+            text-align:center;
+            font-family: sans-serif;
+            font-size: 13.5px;
+            
+        }
+        #contain3>#new>i{
+            margin-left: 20px;
+        }
+        #contain3>#four>p{
+            margin-right: 50px;
+
+        }
+        #Triple{
+            height: 50px;
+            width: 100%;
+            background-color: #cccccc;
+            border: 1px solid #cccccc;
+        }
+        #Triple>p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 13.5px;
+            margin-top: 20px;
+        }
         #main{
             height: 470px;
             width: 100%;
@@ -488,496 +723,645 @@
             font-size: 10px;
            margin-left:5px;
            margin-top: 2px;
-        }
-    </style>
+    
+        
+    </style> -->
 </head>
 <body>
-    
-    <div id="main"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/17/original-0303-STDCRE-32266-DS-AMR-MarchSPFLite-Banners-1920x700-095817.jpg" alt=""></div>
-    <div class="para">
-        <h2>3x Points on EltaMD</h2>
-        <p>Rewards members earn TRIPLE on best-selling SPF. Ends 4/3.</p>
-    </div>
-    <div id="elta">
-        <div class="elta1">
-            <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/0303-STDCRE-32266-DS-AMR-MarchSPFLite-Square-676x556-074354.jpg" alt="">
+    <div id="container">
+        <div id="contain1">
+           <div id="derm">
+              <div id="D">
+                  
+                  <div>
+                      <div class="blackD">
+                          <div></div>
+                      </div>
+                  </div>
+                  <div>
+                      <h1>DERMSTORE</h1>
+                  </div>
+                </div>
+              <div>
+                  <div class="input">
+                      <div>
+                          <input type="text" placeholder="Search for a product or brand...">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                      
+                  </div>
+              </div>
+              <div id="login">
+                  <div>
+                     <button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYtMF5lUCNhU_dM2FxJ4rYbFhIYq-_R659A&usqp=CAU" alt="">
+                        <p id="account">Account</p>
+                     </button>
+                  </div>
+                  <div class="cart">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI68vcXhz6nIxEACtKD85OMf1VeEgX9VRfJw&usqp=CAU" alt="">
+                    <p>Cart</p>
+                  </div>
+              </div>
+           </div>
+           <div id="contain2">
+               <div>
+                   <p>Brands</p>
+               </div>
+               <div>
+                  <p>Browse By</p>
+               </div>
+               <div>
+                 <p>Bestsellers</p>
+               </div>
+               <div>
+                   <p>Skin Care</p>
+               </div>
+               <div>
+                   <p>Makeup</p>
+               </div>
+               <div>
+                   <p>Hair Care</p>
+               </div>
+               <div>
+                   <p>Bath & Body</p>
+               </div>
+               <div>
+                   <p>Men</p>
+               </div>
+               <div>
+                   <p id="Tools">Tools & Devices</p>
+               </div>
+               <div>
+                   <p>Gifts & Sets</p>
+               </div>
+               <div>
+                   <p>BeautyFIX</p>
+               </div>
+               <div>
+                   <p>Sale</p>
+               </div>
+               <div>
+                   <p>New</p>
+               </div>
+               <div>
+                   <p>Skin101</p>
+               </div>
+           </div>
         </div>
-        <div class="elta2">
-            <div>
-                <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/11370303-1074944341868735.jpg" alt="">
-                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-                
-
-                <div id="icon4260">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div id="Number">4260</div>
-                </div>
-                <p class="Dollar">$37.00</p>
-                <button>QUICKBUY</button>
-
-            </div>
-            <div>
-                <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/13656347-1734935260744289.jpg" alt="">
-                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-                <div id="icon4260">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div id="Number">1</div>
-                </div>
-                <p class="Dollar">$39.50</p>
-                <button>QUICKBUY</button>
-
-            </div>
-        </div>
-    </div>
-     <h2 class="Recommended">Recommended for you</h2>
-        <div class="QuickBuy">
-           <div>
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg" alt="">
-             <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-             <button class="gift">$15 EltaMD Gift</button>
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">4259</div>
-                </div>
-                <p class="Dollar1">$37.00</p>
-                <button class="button">QUICKBUY</button>
+        <div id="contain3">
             
+            <div>
+                
+                <i class="fa-solid fa-truck"></i>
+                <p> FREE US shipping over $50</p>
+            </div>
+            <div id="new">
+                <i class="fa-regular fa-clock"></i>
+                <p > New customers save 15% with code WELCOME15</p>
             </div>
             <div>
-                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/13417349-1544914795010323.jpg" alt="">
-                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-                <button class="gift">$15 EltaMD Gift</button>
-                   <div class="icon4259">
-                       <div><i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                       </div>
-                        <div class="Number">4259</div>
+                <i class="fa-solid fa-calendar-check"></i>
+                <p> Redeem Dermstore Rewards</p>
+            </div>
+            <div id="four">
+                <i class="fa-solid fa-check"></i>
+                <p> Pay in 4 with Klarna</p>
+            </div>
+        </div>
+        <div id="Triple">
+             <p>Rewards members get TRIPLE points on ElTaMD.START EARNING</p>
+        </div>
+            
+    </div>
+   <!-- upper.html starts from here -->
+   <div id="main"><img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/17/original-0303-STDCRE-32266-DS-AMR-MarchSPFLite-Banners-1920x700-095817.jpg" alt=""></div>
+   <div class="para">
+       <h2>3x Points on EltaMD</h2>
+       <p>Rewards members earn TRIPLE on best-selling SPF. Ends 4/3.</p>
+   </div>
+   <div id="elta">
+       <div class="elta1">
+           <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/0303-STDCRE-32266-DS-AMR-MarchSPFLite-Square-676x556-074354.jpg" alt="">
+       </div>
+       <div class="elta2">
+           <div>
+               <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/11370303-1074944341868735.jpg" alt="">
+               <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+               
+
+               <div id="icon4260">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
                    </div>
-                   <p class="Dollar1">$37.00</p>
-                   <button class="button">QUICKBUY</button>
-            </div>
-            <div>
-                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
-                <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-                <button class="gift">$15 EltaMD Gift</button>
-                   <div class="icon4259">
-                       <div><i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                           <i class="fa-solid fa-star"></i>
-                       </div>
-                        <div class="Number">4259</div>
+                    <div id="Number">4260</div>
+               </div>
+               <p class="Dollar">$37.00</p>
+               <button>QUICKBUY</button>
+
+           </div>
+           <div>
+               <img class="elta2Image" src="https://static.thcdn.com/images/small/webp//productimg/original/13656347-1734935260744289.jpg" alt="">
+               <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+               <div id="icon4260">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
                    </div>
-                   <p class="Dollar1">$37.00</p>
-                   <button class="button">QUICKBUY</button>
-            </div>
-            <div >
-                <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11289609-8744892770898772.jpg" alt="">
-             <p>SEltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-             <button class="gift">$15 EltaMD Gift</button>
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">4259</div>
-                </div>
-                <p class="Dollar1">$37.00</p>
-                <button class="button">QUICKBUY</button>
-            </div>
-            <div >
-                <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
-             <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
-             <button class="gift">$15 EltaMD Gift</button>
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">4259</div>
-                </div>
-                <p class="Dollar1">$37.00</p>
-                <button class="button">QUICKBUY</button>
-            </div>
-       </div>
-       <h2 class="shop">Shop By Category</h2>
-       <div id="grid">
-           <div><p>SKIN CARE</p></div>
-           <div><p>SUNSCREEN</p></div>
-           <div><p>MOISTURIZERS</p></div>
-           <div><p>HAIR CARE</p></div>
-           <div><p>EYE CREAM</p></div>
-           <div><p>CLEANERS</p></div>
-           <div><p>MAKEUP</p></div>
-           <div><p>FACE SERUMS</p></div>
-       </div>
-       <div id="Meet">
-           <div> 
-               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/Jane_Iredale-032137.png" alt="">
-               <h2>Meet the NEW PurePressed Base</h2>
-               <p>The bestseller from Jane Iredale, now in fresh, new sustainable packaging.</p>
-            </div>
-            <div>
-               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/31/Female_Founded_Brands_SquareBanner-054250-031931.jpg" alt="">
-               <h2>Shop Women-Owned</h2>
-               <p>Curated solutions from our favorite female-founded brands.</p>
-            </div>
-           <div>
-               <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/HPSQ_Banner_676x556-054153-032052.jpg" alt="">
-               <h2>Meet Fekkai</h2>
-               <p>Salon-level hair care with clean, natural ingredients that’s free of nasties & full of performance.</p>
+                    <div id="Number">1</div>
+               </div>
+               <p class="Dollar">$39.50</p>
+               <button>QUICKBUY</button>
+
            </div>
        </div>
-       <div  id="ANTIOXIDANT">
-        <img src="https://static.thcdn.com/images/large/webp/widgets/208-us/46/original-ANTIOXIDANTS_BANNERS_1640X244-064546.jpg" alt="">
-       </div>
-       <h2 class="feature">Featured Brands</h2>
-       <div id="Obagi">
-           <div>
-               <img class="obgimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png" alt="">
-           </div>
-           <div>
-               <img class="skinceuticals" src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg" alt="">
-           </div>
-           <div>
-               <img class="eltaMd" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png" alt="">
-           </div>
-           <div>
-               <img class="globe" src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png" alt="">
-           </div>
-           <div>
-               <img class="skinMedica" src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg" alt="">
-           </div>
-           <div>
-               <img class="sunday" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/SundayRiley-Logo_2000x2000-01-075734.jpg" alt="">
-           </div>
-       </div>
-       <h2 class="feature">Female-Founded Brands</h2>
+   </div>
+    <h2 class="Recommended">Recommended for you</h2>
        <div class="QuickBuy">
-        <div>
-          <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
-          <p>Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)</p>
-          <!-- <button class="gift">$15 EltaMD Gift</button> -->
-             <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">659</div>
-             </div>
-             <p class="Dollar1">$32.00</p>
-             <button class="Qbutton">QUICKBUY</button>
-         
-         </div>
-         <div>
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588281-8764882139037003.jpg" alt="">
-             <p>Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.</p>
-             <!-- <button class="gift">$15 EltaMD Gift</button> -->
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">475</div>
+          <div>
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1074944341868735.jpg" alt="">
+            <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+            <button class="gift">$15 EltaMD Gift</button>
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">4259</div>
+               </div>
+               <p class="Dollar1">$37.00</p>
+               <button class="button">QUICKBUY</button>
+           
+           </div>
+           <div>
+               <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/13417349-1544914795010323.jpg" alt="">
+               <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+               <button class="gift">$15 EltaMD Gift</button>
+                  <div class="icon4259">
+                      <div><i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                       <div class="Number">4259</div>
+                  </div>
+                  <p class="Dollar1">$37.00</p>
+                  <button class="button">QUICKBUY</button>
+           </div>
+           <div>
+               <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
+               <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+               <button class="gift">$15 EltaMD Gift</button>
+                  <div class="icon4259">
+                      <div><i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                       <div class="Number">4259</div>
+                  </div>
+                  <p class="Dollar1">$37.00</p>
+                  <button class="button">QUICKBUY</button>
+           </div>
+           <div >
+               <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11289609-8744892770898772.jpg" alt="">
+            <p>SEltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+            <button class="gift">$15 EltaMD Gift</button>
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">4259</div>
+               </div>
+               <p class="Dollar1">$37.00</p>
+               <button class="button">QUICKBUY</button>
+           </div>
+           <div >
+               <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+            <p>EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)</p>
+            <button class="gift">$15 EltaMD Gift</button>
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">4259</div>
+               </div>
+               <p class="Dollar1">$37.00</p>
+               <button class="button">QUICKBUY</button>
+           </div>
+      </div>
+      <h2 class="shop">Shop By Category</h2>
+      <div id="grid">
+          <div><p>SKIN CARE</p></div>
+          <div><p>SUNSCREEN</p></div>
+          <div><p>MOISTURIZERS</p></div>
+          <div><p>HAIR CARE</p></div>
+          <div><p>EYE CREAM</p></div>
+          <div><p>CLEANERS</p></div>
+          <div><p>MAKEUP</p></div>
+          <div><p>FACE SERUMS</p></div>
+      </div>
+      <div id="Meet">
+          <div> 
+              <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/Jane_Iredale-032137.png" alt="">
+              <h2>Meet the NEW PurePressed Base</h2>
+              <p>The bestseller from Jane Iredale, now in fresh, new sustainable packaging.</p>
+           </div>
+           <div>
+              <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/31/Female_Founded_Brands_SquareBanner-054250-031931.jpg" alt="">
+              <h2>Shop Women-Owned</h2>
+              <p>Curated solutions from our favorite female-founded brands.</p>
+           </div>
+          <div>
+              <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/HPSQ_Banner_676x556-054153-032052.jpg" alt="">
+              <h2>Meet Fekkai</h2>
+              <p>Salon-level hair care with clean, natural ingredients that’s free of nasties & full of performance.</p>
+          </div>
+      </div>
+      <div  id="ANTIOXIDANT">
+       <img src="https://static.thcdn.com/images/large/webp/widgets/208-us/46/original-ANTIOXIDANTS_BANNERS_1640X244-064546.jpg" alt="">
+      </div>
+      <h2 class="feature">Featured Brands</h2>
+      <div id="Obagi">
+          <div>
+              <img class="obgimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png" alt="">
+          </div>
+          <div>
+              <img class="skinceuticals" src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg" alt="">
+          </div>
+          <div>
+              <img class="eltaMd" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png" alt="">
+          </div>
+          <div>
+              <img class="globe" src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png" alt="">
+          </div>
+          <div>
+              <img class="skinMedica" src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg" alt="">
+          </div>
+          <div>
+              <img class="sunday" src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/SundayRiley-Logo_2000x2000-01-075734.jpg" alt="">
+          </div>
+      </div>
+      <h2 class="feature">Female-Founded Brands</h2>
+      <div class="QuickBuy">
+       <div>
+         <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+         <p>Paula's Choice SKIN PERFECTING 2 BHA Liquid Exfoliant (4 fl. oz.)</p>
+         <!-- <button class="gift">$15 EltaMD Gift</button> -->
+            <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-                <p class="Dollar1">$36.00</p>
-                <button class="Qbutton">QUICKBUY</button>
-         </div>
-         <div>
-             <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
-             <p>Sunday Riley GOOD GENES All-In-One Lactic Acid Tr)</p>
-             <!-- <button class="gift">$15 EltaMD Gift</button> -->
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">647</div>
-                </div>
-                <p class="Dollar1">$122.00</p>
-                <button class="Qbutton">QUICKBUY</button>
-         </div>
-         <div >
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902784-7634871308243767.jpg" alt="">
-          <p>Supergoop!® Glowscreen SPF 40 1.7 fl. oz Sunscreen SPF 40 1.7 fl. oz.</p>
-          <!-- <button class="gift">$15 EltaMD Gift</button> -->
-             <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">161</div>
-             </div>
-             <p class="Dollar1">$36.00</p>
-             <button class="Qbutton">QUICKBUY</button>
-         </div>
-         <div >
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg" alt="">
-          <p>Jan Marini Bioglycolic Face Cleanser Glowscreen SPF 40 1.7 (8 oz.)</p>
-          <!-- <button class="gift">$15 EltaMD Gift</button> -->
-             <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">117</div>
-             </div>
-             <p class="Dollar1">$209.00</p>
-             <button class="Qbutton">QUICKBUY</button>
-         </div>
-    </div>
-    <h2 class="feature">New Arrivals</h2>
-    <div class="QuickBuy">
-        <div>
-          <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13644769-2094935078971616.jpg" alt="">
-          <p>Sunday Riley C.E.O. Afterglow Brightening Vitamin C Cream 50ml</p>
-          <button class="gift">New Arrival</button>
-             <!-- <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">4259</div>
-             </div> -->
-             <p class="Dollar1">$65.00</p>
-             <button class="Qbutton1">QUICKBUY</button>
-         
-         </div>
-         <div>
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13156809-1574915281422679.jpg" alt="">
-             <p>TriPollor STOP Vx Bag Exclusive Bundle (Worth $424.00)</p>
-             <button class="gift">New Arrival</button>
-                <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">1</div>
-                </div>
-                <p class="Dollar1">$649.00</p>
-                <button class="Qbutton">QUICKBUY</button>
-         </div>
-         <div>
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13694394-1174938374323578.jpg" alt="">
-             <p>TriPollar STOP X Rose Gold and Cosmetics Bag Exclusive Bundle (Worth $424.00)</p>
-             <button class="gift">New Arrival</button>
-                <!-- <div class="icon4259">
-                    <div><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                     <div class="Number">4259</div>
-                </div> -->
-                <p class="Dollar1">$399.50</p>
-                <button class="Qbutton1">QUICKBUY</button>
-         </div>
-         <div >
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13674838-2504939183735374.jpg" alt="">
-          <p>jane iredale Pure Pressed Blush 3.7g (Various Shades)</p>
-          <button class="gift">New Arrival</button>
-             <!-- <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">4259</div>
-             </div> -->
-             <p class="Dollar1">$37.00</p>
-             <button class="Qbutton1">QUICKBUY</button>
-         </div>
-         <div >
-             <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
-          <p>SkinCeuticals Phyto A+ Brightening Treatment 1 fl. oz</p>
-          <button class="gift">SkinCeuticals</button>
-             <div class="icon4259">
-                 <div><i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                 </div>
-                  <div class="Number">4259</div>
-             </div>
-             <p class="Dollar1">$37.00</p>
-             <button class="Qbutton">QUICKBUY</button>
-         </div>
-    </div>
-    <!-- Video uploaded here -->
-    <div class="video">
-        <video controls width="1200" height="700" autoplay="true" source src="beauty.mp4" controls>
-        </video>
-    </div>
-    <h2 class="feature">#MyDermstoreGlow</h2>
-    <p class="Derms">We care about what goes on your skin, because of what’s within. Our assortment is top-rated, curated & authenticated—bringing you the highest quality products and straight-from-the-experts info to help you navigate all things beauty and skin care. Join the conversation on Instagram with #MyDermstoreGlow—show us your favorite #Dermstore finds that help you care for the skin you’re in! We’re excited to feature our community’s must-haves all season long.</p>
-    <p class="feature">From The Blog</p>
-    <div class="last">
-       
-        <div>
-            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/45/transition-skin-care-routine-from-winter-to-spring-021145.jpg" alt="">
-            <a href=""><p>How to Transition Your Skin Care Routine from Winter to Spring</p></a>
-        </div>
-        <div>
-            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/Q%26A-with-founder-of-briogeo-063326.jpg" alt="">
-            <a href=""><p>Q&A with Nancy Twine, Founder of Briogeo</p></a>
-        </div>
-        <div>
-            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg" alt="">
-            <a href=""><p>In What Order Do I Apply My Skin Care and Products?</p></a>
-        </div>
-        <div>
-            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/40/skinceuticals-products-widget-110940.jpg" alt="">
-            <a href=""><p>7 Overnight Treatments for Super Glowy Skin</p></a>
-        </div>
-    </div>
-    <hr class="line">
-    <div id="box1">
-        <div> 
-            <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p> 
-            <button>SIGN ME UP</button>
-        </div>
-        <div>
-            <p>Connect with us</p>
-            <div class="facebookicon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
+                 <div class="Number">659</div>
             </div>
-          
-         </div>
-    </div>
-    <div id="box2">
-        <div>
-            <hr>
-            <p class="ptag1">Customer Service</p>
-            <p class="ptag">Help Center / FAQs</p>
-            <p class="ptag">Returns</p>
-            <p class="ptag">Shipping Information</p>
-            <p class="ptag">Order Status</p>
-            
-        </div>
-        <div id="box2_1">
-            <div>
-                <hr>
-                <p class="ptag1">My Account</p>
-                <p class="ptag">Manage My Subscriptions</p>
-                <p class="ptag">My Rewards</p>
-                <p class="ptag">My Favorites</p>
-                <p class="ptag">Referrals</p>
-                <p class="ptag">Order History</p>
-            </div>
-            <div>
-                <hr>
-                <p class="ptag1">Company</p>
-                <p class="ptag">About Us</p>
-                <p class="ptag">Press</p>
-                <p class="ptag">What is Klarna?</p>
-                
-            </div>
-            <div>
-                <hr>
-                <p class="ptag1">Legal</p>
-                <p class="ptag">Privacy Policy</p>
-                <p class="ptag">Terms & Conditions</p>
-                <p class="ptag">Modern Slavery Statement</p>
-                <p class="ptag">Product Recall</p>
-                <p class="ptag">Accessibility</p>
-            </div>
-        </div>
-    </div>
-    <div><hr></div>
-    <div id="box3">
+            <p class="Dollar1">$32.00</p>
+            <button class="Qbutton">QUICKBUY</button>
         
-        <div class="box3_1">
-            <h1>THG</h1>
-            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588281-8764882139037003.jpg" alt="">
+            <p>Supergoop!® Unseen Sunscreen SPF 40 1.7 fl. oz.</p>
+            <!-- <button class="gift">$15 EltaMD Gift</button> -->
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">475</div>
+               </div>
+               <p class="Dollar1">$36.00</p>
+               <button class="Qbutton">QUICKBUY</button>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12905513-1414867648974867.jpg" alt="">
+            <p>Sunday Riley GOOD GENES All-In-One Lactic Acid Tr)</p>
+            <!-- <button class="gift">$15 EltaMD Gift</button> -->
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">647</div>
+               </div>
+               <p class="Dollar1">$122.00</p>
+               <button class="Qbutton">QUICKBUY</button>
         </div>
         <div >
-            <h3>Pay securely with</h3>
-            <div class="box3_2">
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqI84jLAeVQUmglrCFznTR67yt1htCTqW-Q&usqp=CAU" alt="" class="src">
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902784-7634871308243767.jpg" alt="">
+         <p>Supergoop!® Glowscreen SPF 40 1.7 fl. oz Sunscreen SPF 40 1.7 fl. oz.</p>
+         <!-- <button class="gift">$15 EltaMD Gift</button> -->
+            <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                 <div class="Number">161</div>
             </div>
-            <div>
-                <img src="https://pngset.com/images/visa-logo-visa-text-symbol-trademark-label-transparent-png-1409869.png" alt="" class="src">
-            </div>
-            <div>
-                <img src="https://images4.alphacoders.com/101/thumb-1920-1017054.png" alt="">
-            </div>
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/800px-Mastercard-logo.svg.png" alt="">
-            </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3v-XRd3SIpyn6Da2ouxQ25vEmfIN_35hDA&usqp=CAU" alt="">
-            </div>
-            <div>
-                <img src="https://s1.q4cdn.com/692158879/files/images/brand_imagery/AXP_BlueBoxLogo_Alternate_REGULARscale_RGB_DIGITAL_700x700.png" alt="">
-            </div>
-            <div>
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/93_Discover_Credit_Card_logo_logos-512.png" alt="">
-            </div>
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/196/196548.png" alt="">
-            </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MSWH29yB94KRxVJYvSuqdxzvPfkgRN_sRg&usqp=CAU" alt="">
-            </div>
+            <p class="Dollar1">$36.00</p>
+            <button class="Qbutton">QUICKBUY</button>
         </div>
-            <div id="Image">
-                <div>
-                    <img class="Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaSx5gQCaXgAaKyFbvZc9BViVkcO80tTQCA&usqp=CAU" alt="">
+        <div >
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg" alt="">
+         <p>Jan Marini Bioglycolic Face Cleanser Glowscreen SPF 40 1.7 (8 oz.)</p>
+         <!-- <button class="gift">$15 EltaMD Gift</button> -->
+            <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGnPnZJyvRwnF2c1U6won8oAkTi9SV54vfVQ&usqp=CAU" alt="">
-                </div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjNRX2WDbBA9GlxKO9pyXiFrIHxdJNVfJYw&usqp=CAU" alt="">
-                </div>
+                 <div class="Number">117</div>
             </div>
+            <p class="Dollar1">$209.00</p>
+            <button class="Qbutton">QUICKBUY</button>
         </div>
+   </div>
+   <h2 class="feature">New Arrivals</h2>
+   <div class="QuickBuy">
+       <div>
+         <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13644769-2094935078971616.jpg" alt="">
+         <p>Sunday Riley C.E.O. Afterglow Brightening Vitamin C Cream 50ml</p>
+         <button class="gift">New Arrival</button>
+            <!-- <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                 <div class="Number">4259</div>
+            </div> -->
+            <p class="Dollar1">$65.00</p>
+            <button class="Qbutton1">QUICKBUY</button>
+        
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13156809-1574915281422679.jpg" alt="">
+            <p>TriPollor STOP Vx Bag Exclusive Bundle (Worth $424.00)</p>
+            <button class="gift">New Arrival</button>
+               <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">1</div>
+               </div>
+               <p class="Dollar1">$649.00</p>
+               <button class="Qbutton">QUICKBUY</button>
+        </div>
+        <div>
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13694394-1174938374323578.jpg" alt="">
+            <p>TriPollar STOP X Rose Gold and Cosmetics Bag Exclusive Bundle (Worth $424.00)</p>
+            <button class="gift">New Arrival</button>
+               <!-- <div class="icon4259">
+                   <div><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                   </div>
+                    <div class="Number">4259</div>
+               </div> -->
+               <p class="Dollar1">$399.50</p>
+               <button class="Qbutton1">QUICKBUY</button>
+        </div>
+        <div >
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13674838-2504939183735374.jpg" alt="">
+         <p>jane iredale Pure Pressed Blush 3.7g (Various Shades)</p>
+         <button class="gift">New Arrival</button>
+            <!-- <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                 <div class="Number">4259</div>
+            </div> -->
+            <p class="Dollar1">$37.00</p>
+            <button class="Qbutton1">QUICKBUY</button>
+        </div>
+        <div >
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11174178-1044909106371632.jpg" alt="">
+         <p>SkinCeuticals Phyto A+ Brightening Treatment 1 fl. oz</p>
+         <button class="gift">SkinCeuticals</button>
+            <div class="icon4259">
+                <div><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                 <div class="Number">4259</div>
+            </div>
+            <p class="Dollar1">$37.00</p>
+            <button class="Qbutton">QUICKBUY</button>
+        </div>
+   </div>
+   <!-- Video uploaded here -->
+   <div class="video">
+       <video controls width="1200" height="700" autoplay="true" source src="beauty.mp4" controls>
+       </video>
+   </div>
+   <h2 class="feature">#MyDermstoreGlow</h2>
+   <p class="Derms">We care about what goes on your skin, because of what’s within. Our assortment is top-rated, curated & authenticated—bringing you the highest quality products and straight-from-the-experts info to help you navigate all things beauty and skin care. Join the conversation on Instagram with #MyDermstoreGlow—show us your favorite #Dermstore finds that help you care for the skin you’re in! We’re excited to feature our community’s must-haves all season long.</p>
+   <p class="feature">From The Blog</p>
+   <div class="last">
+      
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/45/transition-skin-care-routine-from-winter-to-spring-021145.jpg" alt="">
+           <a href=""><p>How to Transition Your Skin Care Routine from Winter to Spring</p></a>
+       </div>
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/Q%26A-with-founder-of-briogeo-063326.jpg" alt="">
+           <a href=""><p>Q&A with Nancy Twine, Founder of Briogeo</p></a>
+       </div>
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg" alt="">
+           <a href=""><p>In What Order Do I Apply My Skin Care and Products?</p></a>
+       </div>
+       <div>
+           <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/40/skinceuticals-products-widget-110940.jpg" alt="">
+           <a href=""><p>7 Overnight Treatments for Super Glowy Skin</p></a>
+       </div>
+   </div>
+   <hr class="line">
+   <div id="box1">
+       <div> 
+           <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p> 
+           <button>SIGN ME UP</button>
+       </div>
+       <div>
+           <p>Connect with us</p>
+           <div class="facebookicon">
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-youtube"></i>
+               <i class="fa-brands fa-pinterest-p"></i>
+           </div>
+         
+        </div>
+   </div>
+   <div id="box2">
+       <div>
+           <hr>
+           <p class="ptag1">Customer Service</p>
+            <div class="ptag"> 
+              <p>Help Center / FAQs</p>
+            </div>
+           <div  class="ptag">
+               <p>Returns</p>
+            </div>
+          <div class="ptag">
+            <p>Shipping Information</p>
+          </div>
+           <div class="ptag">
+            <p>Order Status</p>
+           </div>
+           
+       </div>
+       <div id="box2_1">
+           <div>
+               <hr>
+               <p class="ptag1">My Account</p>
+               <div class="ptag">
+                <p>Manage My Subscriptions</p>
+               </div>
+               <div  class="ptag">
+                <p>My Rewards</p>
+               </div>
+               <div  class="ptag">
+                <p>My Favorites</p>
+               </div>
+               <div class="ptag">
+                <p>Referrals</p>
+               </div>
+                <div class="ptag">
+                    <p>Order History</p>
+                </div>
+           </div>
+           <div>
+               <hr>
+               <p class="ptag1">Company</p>
+               <div class="ptag">
+                <p>About Us</p>
+               </div>
+               <div  class ="ptag">
+                <p>Press</p>
+               </div>
+               <div class="ptag">
+                <p>What is Klarna?</p>
+               </div>
+               
+           </div>
+           <div>
+               <hr>
+               <p class="ptag1">Legal</p>
+               <div  class="ptag">
+                <p>Privacy Policy</p>
+               </div>
+               <div class="ptag">
+                <p>Terms & Conditions</p>
+               </div>
+               <div class="ptag">
+                <p>Modern Slavery Statement</p>
+               </div>
+               <div class="ptag">
+                <p>Product Recall</p>
+               </div>
+               <div class="ptag">
+                <p>Accessibility</p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div><hr></div>
+   <div id="box3">
        
-    </div>
+       <div class="box3_1">
+           <h1>THG</h1>
+           <p>2022 © The Hut.com Ltd.</p>
+       </div>
+       <div >
+           <h3>Pay securely with</h3>
+           <div class="box3_2">
+           <div>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqI84jLAeVQUmglrCFznTR67yt1htCTqW-Q&usqp=CAU" alt="" class="src">
+           </div>
+           <div>
+               <img src="https://pngset.com/images/visa-logo-visa-text-symbol-trademark-label-transparent-png-1409869.png" alt="" class="src">
+           </div>
+           <div>
+               <img src="https://images4.alphacoders.com/101/thumb-1920-1017054.png" alt="">
+           </div>
+           <div>
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/800px-Mastercard-logo.svg.png" alt="">
+           </div>
+           <div>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3v-XRd3SIpyn6Da2ouxQ25vEmfIN_35hDA&usqp=CAU" alt="">
+           </div>
+           <div>
+               <img src="https://s1.q4cdn.com/692158879/files/images/brand_imagery/AXP_BlueBoxLogo_Alternate_REGULARscale_RGB_DIGITAL_700x700.png" alt="">
+           </div>
+           <div>
+               <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/93_Discover_Credit_Card_logo_logos-512.png" alt="">
+           </div>
+           <div>
+               <img src="https://cdn-icons-png.flaticon.com/512/196/196548.png" alt="">
+           </div>
+           <div>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MSWH29yB94KRxVJYvSuqdxzvPfkgRN_sRg&usqp=CAU" alt="">
+           </div>
+       </div>
+           <div id="Image">
+               <div>
+                   <img class="Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHaSx5gQCaXgAaKyFbvZc9BViVkcO80tTQCA&usqp=CAU" alt="">
+               </div>
+               <div>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGnPnZJyvRwnF2c1U6won8oAkTi9SV54vfVQ&usqp=CAU" alt="">
+               </div>
+               <div>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjNRX2WDbBA9GlxKO9pyXiFrIHxdJNVfJYw&usqp=CAU" alt="">
+               </div>
+           </div>
+       </div>
+      
+   </div>
 </body>
 </html>
+<!-- <script src="index.js"></script> -->
+<script>
+    document.querySelector("#Amitabh").addEventlistner("click",kidsPage)
+
+function kidsPage(){
+    window.location.href="kids.html"
+}
+</script>
